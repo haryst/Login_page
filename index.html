@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sound System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+    <h2>Welcome Back</h2>
+    <p class="subtitle">Login to your dashboard</p>
+
+    <div class="input-group">
+        <input type="text" id="username" placeholder="Username">
+        <small id="userError">Username wajib diisi</small>
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="password" placeholder="Password">
+        <span class="toggle" onclick="togglePassword()">👁</span>
+        <small id="passError">Password minimal 6 karakter</small>
+    </div>
+
+    <button onclick="login()">Login</button>
+
+    <p class="footer">© 2026 Sound System</p>
+</div>
+
+<script>
+function togglePassword() {
+    const pass = document.getElementById("password");
+    pass.type = pass.type === "password" ? "text" : "password";
+}
+
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    let userError = document.getElementById("userError");
+    let passError = document.getElementById("passError");
+
+    let valid = true;
+
+    if (username === "") {
+        userError.style.display = "block";
+        valid = false;
+    } else {
+        userError.style.display = "none";
+    }
+
+    if (password.length < 6) {
+        passError.style.display = "block";
+        valid = false;
+    } else {
+        passError.style.display = "none";
+    }
+
+    if (valid) {
+        alert("Login berhasil! (simulasi)");
+    }
+}
+</script>
+
+</body>
+</html>

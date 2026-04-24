@@ -8,14 +8,15 @@ body {
 }
 
 .navbar-brand {
+    font-style:italic;
     font-size: 24px;
-    font-weight: bold;
     color: #ff0000a1 !important;
     letter-spacing: 1px;
 }
 
 /*Background */
 .hero {
+    font-style: italic;
     height: 90vh;
     background: url('background.jpg') no-repeat center center/cover;
 }
@@ -33,7 +34,7 @@ body {
     z-index: 2;
 }
 
-/* Card Hover */
+/* Card paket harga */
 .card {
     transition: 0.3s;
 }

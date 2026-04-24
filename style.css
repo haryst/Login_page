@@ -1,104 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Background panggung sound system */
-body {
-    height: 100vh;
-    background: url('background.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('background.jpg') center/cover no-repeat;
+    position: relative;
 }
 
-/* Overlay gelap biar elegan */
-.overlay {
+.hero::before {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(5px);
 }
 
-/* Card login */
-.container {
+.hero .container {
     position: relative;
     z-index: 2;
-    width: 350px;
-    padding: 40px;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(15px);
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* Judul */
-.container h2 {
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #ccc;
-}
-
-/* Input */
-.input-group {
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-}
-
-/* Toggle password */
-.toggle {
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    cursor: pointer;
-    color: #333;
-}
-
-/* Error text */
-small {
-    display: none;
-    color: #ff8080;
-    font-size: 12px;
-}
-
-/* Button */
-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #4facfe, #00f2fe);
-    color: #fff;
+/* Harga */
+.price {
+    font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
+    color: #007bff;
+}
+
+/* Card Hover */
+.card:hover {
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
 }
 
-/* Footer */
-.footer {
-    margin-top: 15px;
-    font-size: 12px;
-    color: #ccc;
+.btn-primary:hover {
+    background-color: #0056b3;
 }

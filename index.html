@@ -1,69 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Sound System</title>
+    <title>Informasi Harga Sound System & Lighting</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="overlay"></div>
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="LogoNavbar.jpg" alt="" width="40" height="30" class="d-inline-block align-text-top">Extreme'D Audio
+    </a>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-<div class="container">
-    <h2>Welcome Back</h2>
-    <p class="subtitle">Login to your dashboard</p>
-
-    <div class="input-group">
-        <input type="text" id="username" placeholder="Username">
-        <small id="userError">Username wajib diisi</small>
+<!-- Hero Section -->
+<section class="hero text-center text-white d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Sound System & Lighting Profesional</h1>
+        <p class="lead">Solusi terbaik untuk event, konser, wedding, dan acara lainnya</p>
     </div>
+</section>
 
-    <div class="input-group">
-        <input type="password" id="password" placeholder="Password">
-        <span class="toggle" onclick="togglePassword()">👁</span>
-        <small id="passError">Password minimal 6 karakter</small>
+<!-- Paket Harga -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Paket Harga</h2>
+        <div class="row">
+
+            <!-- Paket 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Basic Package</h4>
+                        <p class="price">Rp 1.500.000</p>
+                        <ul class="list-unstyled">
+                            <li>2 Speaker</li>
+                            <li>1 Mixer</li>
+                            <li>2 Mic</li>
+                            <li>Operator</li>
+                        </ul>
+                        <button class="btn btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow border-primary">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Standard Package</h4>
+                        <p class="price">Rp 3.000.000</p>
+                        <ul class="list-unstyled">
+                            <li>4 Speaker</li>
+                            <li>Lighting Basic</li>
+                            <li>3 Mic</li>
+                            <li>Operator + Crew</li>
+                        </ul>
+                        <button class="btn btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Premium Package</h4>
+                        <p class="price">Rp 6.000.000</p>
+                        <ul class="list-unstyled">
+                            <li>Full Sound System</li>
+                            <li>Lighting Pro</li>
+                            <li>LED & Effects</li>
+                            <li>Full Crew</li>
+                        </ul>
+                        <button class="btn btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</section>
 
-    <button onclick="login()">Login</button>
+<!-- Informasi -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Kenapa Pilih Kami?</h2>
+        <p>Kami menyediakan peralatan sound system dan lighting berkualitas tinggi untuk berbagai acara seperti konser, wedding, dan event perusahaan.</p>
+    </div>
+</section>
 
-    <p class="footer">© 2026 Sound System</p>
-</div>
-
-<script>
-function togglePassword() {
-    const pass = document.getElementById("password");
-    pass.type = pass.type === "password" ? "text" : "password";
-}
-
-function login() {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-
-    let userError = document.getElementById("userError");
-    let passError = document.getElementById("passError");
-
-    let valid = true;
-
-    if (username === "") {
-        userError.style.display = "block";
-        valid = false;
-    } else {
-        userError.style.display = "none";
-    }
-
-    if (password.length < 6) {
-        passError.style.display = "block";
-        valid = false;
-    } else {
-        passError.style.display = "none";
-    }
-
-    if (valid) {
-        alert("Login berhasil! (simulasi)");
-    }
-}
-</script>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2026 Extreme'D Sound System</p>
+</footer>
 
 </body>
 </html>

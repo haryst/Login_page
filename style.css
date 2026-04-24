@@ -10,7 +10,7 @@ body {
 .navbar-brand {
     font-style:italic;
     font-size: 24px;
-    color: #ff0000a1 !important;
+    color: #d62e2ead !important;
     letter-spacing: 1px;
 }
 
@@ -45,7 +45,7 @@ body {
 
 /* Button Style */
 .btn-primary {
-    background-color: #0066ab;
+    background-color: #0350f4;
     border: none;
 }
 

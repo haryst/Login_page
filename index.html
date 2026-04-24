@@ -16,14 +16,13 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
+        <a class="navbar-brand fw-bold" href="index.html">
             <img src="LogoNavbar.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
             Extreme'D Audio
         </a>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="search" aria-label="search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="ms-auto">
+            <a href="index.html" class="btn btn-primary btn-login">Login</a>
+        </div>
     </div>
 </nav>
 
@@ -32,7 +31,6 @@
     <div class="container text-center">
         <h1 class="display-4 fw-bold">Sound System & Lighting</h1>
         <p class="lead">Solusi terbaik untuk event Anda</p>
-        <button class="btn btn-primary" onclick="scrollToPricing()">Lihat Harga</button>
     </div>
 </section>
 
@@ -49,7 +47,7 @@
                         <h5 class="card-title">Paket Basic</h5>
                         <p>Sound System 1000 Watt</p>
                         <h3 class="text-primary">Rp 1.500.000</h3>
-                        <button class="btn btn-outline-primary" onclick="order('Basic')">Pesan</button>
+                        <a href="purchase.html" class="btn btn-outline-primary">Pesan</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +59,7 @@
                         <h5 class="card-title">Paket Medium</h5>
                         <p>Sound System 3000 Watt</p>
                         <h3 class="text-primary">Rp 3.500.000</h3>
-                        <button class="btn btn-outline-primary" onclick="order('Medium')">Pesan</button>
+                        <a href="purchase.html" class="btn btn-outline-primary">Pesan</a>
                     </div>
                 </div>
             </div>
@@ -73,7 +71,7 @@
                         <h5 class="card-title">Paket Pro</h5>
                         <p>Sound Full System & Lighting</p>
                         <h3 class="text-primary">Rp 7.000.000</h3>
-                        <button class="btn btn-outline-primary" onclick="order('Pro')">Pesan</button>
+                        <a href="purchase.html" class="btn btn-outline-primary">Pesan</a>
                     </div>
                 </div>
             </div>
@@ -87,12 +85,6 @@
     <p>Hubungi kami: 085162575611</p>
 </section>
 
-<!-- Script -->
-<script>
-function scrollToPricing() {
-    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
-}
-</script>
 
 </body>
 </html>

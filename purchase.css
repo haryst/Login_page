@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card */
+.card {
+    background: rgba(254, 254, 254, 0.9);
+    border-radius: 12px;
+}
+
+/* Table */
+.table {
+    color: #fff;
+}
+
+/* Hover efek tombol */
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

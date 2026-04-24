@@ -10,8 +10,19 @@ body {
 .navbar-brand {
     font-style:italic;
     font-size: 24px;
-    color: #d62e2ead !important;
+    color: #ffffffd0 !important;
     letter-spacing: 1px;
+}
+
+.btn-login {
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
 }
 
 /*Background */
